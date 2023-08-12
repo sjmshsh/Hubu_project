@@ -1,0 +1,37 @@
+server:
+  name: "project-user"
+  addr: "127.0.0.1:8080"
+zap:
+  debugFileName: "D:\\go\\menu\\ms_project\\logs\\debug\\menu-debug.log"
+  infoFileName: "D:\\go\\menu\\ms_project\\logs\\info\\menu-info.log"
+  warnFileName: "D:\\go\\menu\\ms_project\\logs\\error\\menu-error.log"
+  maxSize: 500,
+  maxAge: 28,
+  MaxBackups: 3
+redis:
+  host: "localhost"
+  port: 6379
+  password: ""
+  db: 0
+grpc:
+  etcdAddr: "127.0.0.1:8881"
+  addr: "127.0.0.1:8881"
+  name: "user"
+  version: "1.0.0"
+  weight: 2
+etcd:
+  addrs:
+    - "127.0.0.1:2379"
+mysql:
+  username: root
+  password: root
+  host: 127.0.0.1
+  port: 3309
+  db: msproject
+jwt:
+  accessExp: 7
+  refreshExp: 14
+  accessSecret: msproject
+  refreshSecret: ms_project
+jaeger:
+  endpoints: "http://localhost:14268/api/traces"

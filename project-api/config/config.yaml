@@ -1,0 +1,15 @@
+server:
+  name: "project-api"
+  addr: "0.0.0.0:80"
+zap:
+  debugFileName: "D:\\go\\menu\\project_ws\\logs\\debug\\project-debug.log"
+  infoFileName: "D:\\go\\menu\\project_ws\\logs\\info\\project-info.log"
+  warnFileName: "D:\\go\\menu\\project_ws\\logs\\error\\project-error.log"
+  maxSize: 500,
+  maxAge: 28,
+  MaxBackups: 3
+etcd:
+  addrs:
+    - "127.0.0.1:2379"
+jaeger:
+  endpoints: "http://localhost:14268/api/traces"
